@@ -36,8 +36,7 @@ input {
   height: 40px;
   width: 243px;
   border-radius: 30px;
-  border-width: 1px;
-  border-color: black;
+  border: 1px solid black;
   padding-left: 10px;
 }
 
@@ -49,7 +48,12 @@ input::placeholder {
   border-radius: 50%;
   height: 25px;
   width: 25px;
-  border-width: 1px;
+  border: 1px solid black;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background: linear-gradient(to bottom, rgb(255, 117, 117), rgb(255, 255, 146));
 }
 
 nav {
@@ -72,4 +76,37 @@ li {
   display: flex;
   height: 100%;
   width: 350px;
+}
+
+.li-container {
+  display: flex;
+  align-items: center;
+}
+
+.v-sign {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid;
+}
+
+.v-sign:hover {
+  cursor: pointer;
+  background: linear-gradient(to bottom, rgb(255, 117, 117), rgb(255, 255, 146));
+}
+
+.full-task-container {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.x-sign:hover {
+  cursor: pointer;
 }
