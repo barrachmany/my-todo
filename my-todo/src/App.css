@@ -7,15 +7,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url('./images/sunset.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .main-container {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(217, 217, 217);
   height: 100%;
   width: 380px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(238, 238, 238, 0.5);
+  border-radius: 20px;
 }
 
 .input-container {
@@ -38,8 +45,6 @@ input::placeholder {
   padding: 7px;
 }
 
-
-
 .submit-button {
   border-radius: 50%;
   height: 25px;
@@ -49,6 +54,7 @@ input::placeholder {
 
 nav {
   margin-bottom: 15px;
+  color: #757575;
 }
 
 ul {
@@ -59,7 +65,7 @@ ul {
 
 li {
   padding: 15px;
-  border-bottom: 1px solid #aeaeae;
+  border-bottom: 1px solid #757575;
 }
 
 .list-container {
